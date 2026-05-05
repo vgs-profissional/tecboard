@@ -1,0 +1,162 @@
+/* Fonte */
+@font-face {
+    font-family: 'unbounded';
+    src: url(/tecboard/fontes/Unbounded-VariableFont_wght.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Cores */
+:root {
+    --roxo-destaque: #9747ff;
+    --roxo-hover: #8233e8;
+    --texto-dark: #ffffff;
+    --texto-light: #232323;
+    --fundo-dark: #0e1014;
+}
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo Desktop */
+body {
+    background-color: var(--fundo-dark);
+    color: var(--texto-dark);
+    font-family: 'unbounded', sans-serif;
+    /* font-size: 24px; */
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+
+    margin: 2em 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 64px;
+    text-align: center;
+    /* display: flex; */
+
+}
+
+h1>strong.destaque {
+    color: var(--roxo-destaque);
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    font-family: poppins, sans-serif;
+    font-size: 24px;
+    text-align: center;
+
+    margin: 1em 0 0 0;
+}
+
+a.link_demo {
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--texto-dark);
+    text-align: center;
+
+    border: 0px transparent;
+    border-radius: 40px;
+
+    width: 14em;
+    padding: 15px 25px;
+    margin: 40px;
+    background-color: var(--roxo-destaque);
+}
+
+a.link_demo:hover {
+    background-color: var(--roxo-hover);
+}
+
+img.telefone {
+    background: radial-gradient(var(--roxo-destaque) 12%, #9747ff00 47%, #9747ff00 98%);
+}
+
+@media(max-width:768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header>img,
+    header>a {
+        padding: 0 40px;
+    }
+
+    h1 {
+        padding: 20px 0 0 0;
+        text-align: center;
+    }
+
+    p {
+        width: 648px;
+        font-size: 24px;
+    }
+
+    p>br {
+        display: none;
+    }
+
+    section>a {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 319px) and (max-width:425px) {
+
+    header>img {
+        padding: 0 0 0 16px;
+    }
+
+    header>a {
+        padding: 0 17px 0 0;
+    }
+
+    h1 {
+        font-size: 40px;
+        width: 341px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 20px;
+        width: 341px;
+        text-align: center;
+    }
+
+    a.link_demo {
+        font-size: 20px;
+        text-align: center;
+        width: 251px;
+
+        padding: 24px;
+    }
+
+    section>img {
+        width: 332px;
+        height: 230px;
+    }
+
+}
