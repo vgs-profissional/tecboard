@@ -24,8 +24,8 @@
 
 /* Estilo Desktop */
 body {
-    background-color: var(--fundo-dark);
-    color: var(--texto-dark);
+    background-color: var(--texto-dark);
+    color: var(--texto-light);
     font-family: 'unbounded', sans-serif;
     /* font-size: 24px; */
 }
